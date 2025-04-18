@@ -1,0 +1,113 @@
+/* Auth.module.css */
+
+.authContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--bg-color);
+    color: var(--text-primary);
+}
+
+.authHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.authHeader h1 {
+    font-family: "LemonMilk", sans-serif;
+    font-weight: 400;
+    color: var(--primary);
+    margin: 0;
+    font-size: 2rem;
+}
+
+.authModeButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.authModeButton {
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.authModeButton.active {
+    background-color: var(--primary);
+    color: var(--bg-color);
+    border-color: var(--primary);
+}
+
+.authContent {
+    background-color: var(--surface-color);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-family: "LemonMilk", sans-serif;
+    font-size: 1.5rem;
+}
+
+.error {
+    color: var(--button-danger);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.inputGroup input {
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-primary);
+}
+
+.button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--button-primary);
+    color: white;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

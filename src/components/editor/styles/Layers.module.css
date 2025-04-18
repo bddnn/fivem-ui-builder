@@ -1,0 +1,50 @@
+.layersContainer {
+    padding: 10px;
+    background: var(--surface-color);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.title {
+    font-family: "LemonMilk", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.layerList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.layerItem {
+    margin-bottom: 4px;
+}
+
+.layerLabel {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.layerLabel:hover {
+    background: var(--hover-bg);
+}
+
+.selected {
+    background: var(--primary);
+    color: var(--bg-color);
+}
+
+.toggleButton {
+    margin-right: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}

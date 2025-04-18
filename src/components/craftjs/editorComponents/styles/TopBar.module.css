@@ -1,0 +1,47 @@
+/* TopBar.module.css */
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+}
+
+.canvasSizeSelector,
+.controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Uniwersalny styl dla wszystkich przycisków */
+.button {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    outline: none;
+}
+
+.button:hover {
+    background: var(--hover-bg);
+}
+
+/* Aktywny przycisk – np. wybrany rozmiar ekranu */
+.activeButton {
+    background: var(--primary);
+    color: var(--bg-color);
+    border-color: var(--primary);
+}
+
+/* Minimalistyczne ikony */
+.icon {
+    font-size: 0.8rem;
+}
